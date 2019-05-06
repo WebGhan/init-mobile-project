@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
@@ -14,6 +15,7 @@
   <link rel="stylesheet" href="css/common.min.css">
   <script src="js/jquery/jquery-1.9.1.min.js"></script>
   <script src="js/common.js"></script>
+
 <body>
   <!-- 代码发布时应删除此注释
     * 如果所用插件支持，并且只需兼容ie9及以上的浏览器，建议使用2.2.4版本的jquery
@@ -28,5 +30,37 @@
 
     * 正确的版权信息写法 https://10.1pxeye.com/footer-copyright/
   -->
+
+  <!-- 分页 -->
+  <ul class="pagination">
+    <li><a href="">上一页</a></li>
+    <li class="disabled"><span>1</span></li>
+    <li class="active"><span>1</span></li>
+    <li><a href="">2</a></li>
+    <li><a href="" rel="next">下一页</a></li>
+    <li class="disabled"><span>下一页</span></li>
+  </ul>
+
+  <!-- 百度地图示例 -->
+  <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=4E5A3Fb789138a0ab8431f42a887aea1"></script>
+  <div class="cmap" id="allmap" style="width: 770px; height: 360px;">
+    <!-- 770px 290px -->
+  </div>
+  <script type="text/javascript">
+    // 百度地图API功能
+    var map = new BMap.Map("allmap");
+    var point = new BMap.Point(116.404, 39.915);
+    var marker = new BMap.Marker(point);  // 创建标注
+    map.addOverlay(marker);              // 将标注添加到地图中
+    map.centerAndZoom(point, 15);
+    var opts = {
+      width: 200,     // 信息窗口宽度
+      height: 100,     // 信息窗口高度
+      title: "公司名称", // 信息窗口标题
+    }
+    var infoWindow = new BMap.InfoWindow("地址：公司所在地", opts);  // 创建信息窗口对象
+    map.openInfoWindow(infoWindow, point); //开启信息窗口
+  </script>
 </body>
+
 </html>

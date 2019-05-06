@@ -42,3 +42,17 @@ $color3:#333;
 $color6:#666;
 $color9:#999;
 $colore:#eee;
+
+// 分页
+.pagination { zoom:1;
+	li { float: left; margin-right: 10px; background: #eeeeee;
+		a, span { display: block; padding: 0 10px; min-width: 20px; height: 40px; line-height: 40px; text-align: center; color: #666; }
+		&:hover, &.active{ color: #fff; background: #000;
+			a, span { color: #fff; }
+		}
+		&.disabled { color: #666; background: #eeeeee; cursor: not-allowed; 
+			a, span { color: #666; }
+		}
+	}
+	&:after{display:block;clear:both;content:"";visibility:hidden;height:0;}
+}

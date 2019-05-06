@@ -69,3 +69,49 @@ input:focus, textarea:focus {
 }
 
 /* main */
+.pagination {
+  zoom: 1;
+}
+
+.pagination li {
+  float: left;
+  margin-right: 10px;
+  background: #eeeeee;
+}
+
+.pagination li a, .pagination li span {
+  display: block;
+  padding: 0 10px;
+  min-width: 20px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #666;
+}
+
+.pagination li:hover, .pagination li.active {
+  color: #fff;
+  background: #000;
+}
+
+.pagination li:hover a, .pagination li:hover span, .pagination li.active a, .pagination li.active span {
+  color: #fff;
+}
+
+.pagination li.disabled {
+  color: #666;
+  background: #eeeeee;
+  cursor: not-allowed;
+}
+
+.pagination li.disabled a, .pagination li.disabled span {
+  color: #666;
+}
+
+.pagination:after {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0;
+}
