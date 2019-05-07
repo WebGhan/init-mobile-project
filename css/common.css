@@ -115,3 +115,16 @@ input:focus, textarea:focus {
   visibility: hidden;
   height: 0;
 }
+
+.m-copyright {
+  text-align: center;
+  color: #000;
+}
+
+.m-copyright a {
+  color: #000;
+}
+
+.m-copyright a:hover {
+  color: red;
+}
