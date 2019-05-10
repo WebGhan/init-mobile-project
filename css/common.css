@@ -128,3 +128,11 @@ input:focus, textarea:focus {
 .m-copyright a:hover {
   color: red;
 }
+
+img {
+  max-width: 100%;
+}
+
+pre {
+  white-space: pre-wrap;
+}
