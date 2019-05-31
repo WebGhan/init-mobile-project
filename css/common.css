@@ -129,11 +129,11 @@ input:focus, textarea:focus {
   color: red;
 }
 
-img {
+.rich-text img {
   max-width: 100%;
   height: auto;
 }
 
-pre {
+.rich-text pre {
   white-space: pre-wrap;
 }

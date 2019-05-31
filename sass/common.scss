@@ -35,7 +35,7 @@ $color6:#666;
 $color9:#999;
 $colore:#eee;
 
-// 分页
+// 通用分页
 .pagination { zoom:1;
 	li { float: left; margin-right: 10px; background: $colore;
 		a, span { display: block; padding: 0 10px; min-width: 20px; height: 40px; line-height: 40px; text-align: center; color: $color6; }
@@ -57,5 +57,7 @@ $colore:#eee;
 }
 
 // 富文本内容部分限制
-img { max-width: 100%; height: auto; }
-pre { white-space: pre-wrap; }
+.rich-text {
+	img { max-width: 100%; height: auto; }
+	pre { white-space: pre-wrap; }
+}
