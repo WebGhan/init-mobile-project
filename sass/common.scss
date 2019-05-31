@@ -18,26 +18,18 @@ input:focus, textarea:focus {outline:none;}
 .clearfloat{zoom:1}
 
 /* main */
-@mixin shadow($cont:0 0 0 rgba(0,0,0,.1)){box-shadow:$cont; -webkit-box-shadow:$cont;-o-box-shadow:$cont; -moz-box-shadow:$cont; }
+@mixin main($width:1200px){width:$width; margin:0 auto;}
+@mixin shadow($cont:0 0 0 rgba(0,0,0,0.1)){box-shadow:$cont; -webkit-box-shadow:$cont;-o-box-shadow:$cont; -moz-box-shadow:$cont; }
 @mixin radius($num:50%){border-radius:$num; -webkit-border-radius:$num; -o-border-radius:$num; -moz-border-radius:$num;}
 @mixin rotate($num:0){ -webkit-transform: rotate($num);-ms-transform: rotate($num);-o-transform: rotate($num);transform: rotate($num); }
 @mixin scale($num:0){ -webkit-transform: scale($num);-ms-transform: scale($num);-o-transform: scale($num);transform: scale($num); }
-@mixin iblock(){display: inline-block; *display: inline; *zoom: 1;}
-@mixin main($width:1200px){width:$width; margin:0 auto;}
-@mixin opacity($num:1){opacity: $num; -webkit-opacity: $num; -o-opacity: $num; -moz-opacity: $num;filter:alpha(opacity=$num*100)}
+@mixin inlineblock(){display: inline-block; *display: inline; *zoom: 1;}
+@mixin opacity($num:0){opacity: $num; -webkit-opacity: $num; -o-opacity: $num; -moz-opacity: $num;filter:alpha(opacity=$num*100)}
 @mixin textover(){overflow:hidden;white-space:nowrap;display:block;text-overflow:ellipsis;}
 @mixin textovermore($line:2){display: -webkit-box;display: -moz-box;overflow: hidden;text-overflow: ellipsis;word-break: break-all;-webkit-box-orient: vertical;-webkit-line-clamp:$line;  }
-@mixin bgsize($num:100%){ -webkit-background-size: $num;background-size: $num; }
-@mixin trs($num:all .5s ease){transition: $num; -webkit-transition: $num; -o-transition: $num; -moz-transition: $num;}
-@mixin flexbetween(){display: flex; display: -webkit-flex; flex-wrap:wrap; justify-content: space-between;}
-@mixin flexleft(){display: flex; display: -webkit-flex; flex-wrap:wrap; justify-content: left;}
-@mixin flexcenter(){display: flex; display: -webkit-flex; flex-wrap:wrap; justify-content: center;}
-@mixin flexcenter_v(){display: flex; display: -webkit-flex; flex-flow: column;align-items:center; justify-content: center;}
-@mixin hide(){ visibility: hidden; opacity: 0; -webkit-opacity: 0; -o-opacity: 0; -moz-opacity: 0; filter:alpha(opacity=0); }
-@mixin show(){ visibility: visible; opacity: 1; -webkit-opacity: 1; -o-opacity: 1; -moz-opacity: 1; filter:alpha(opacity=100); }
+@mixin transition($num:all 0.5s ease){transition: $num; -webkit-transition: $num; -o-transition: $num; -moz-transition: $num;}
 
 $color0:#000;
-$color2:#222;
 $color3:#333;
 $color6:#666;
 $color9:#999;
@@ -45,21 +37,21 @@ $colore:#eee;
 
 // 分页
 .pagination { zoom:1;
-	li { float: left; margin-right: 10px; background: #eeeeee;
-		a, span { display: block; padding: 0 10px; min-width: 20px; height: 40px; line-height: 40px; text-align: center; color: #666; }
-		&:hover, &.active{ color: #fff; background: #000;
+	li { float: left; margin-right: 10px; background: $colore;
+		a, span { display: block; padding: 0 10px; min-width: 20px; height: 40px; line-height: 40px; text-align: center; color: $color6; }
+		&:hover, &.active{ color: #fff; background: $color0;
 			a, span { color: #fff; }
 		}
-		&.disabled { color: #666; background: #eeeeee; cursor: not-allowed; 
-			a, span { color: #666; }
+		&.disabled { color: $color6; background: $colore; cursor: not-allowed; 
+			a, span { color: $color6; }
 		}
 	}
 	&:after{display:block;clear:both;content:"";visibility:hidden;height:0;}
 }
 
 // 版权信息
-.m-copyright { text-align: center; color: #000; 
-    a { color: #000; 
+.m-copyright { text-align: center; color: $color0; 
+    a { color: $color0; 
         &:hover { color: red; }
     }
 }

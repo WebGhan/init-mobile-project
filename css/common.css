@@ -76,7 +76,7 @@ input:focus, textarea:focus {
 .pagination li {
   float: left;
   margin-right: 10px;
-  background: #eeeeee;
+  background: #eee;
 }
 
 .pagination li a, .pagination li span {
@@ -100,7 +100,7 @@ input:focus, textarea:focus {
 
 .pagination li.disabled {
   color: #666;
-  background: #eeeeee;
+  background: #eee;
   cursor: not-allowed;
 }
 
