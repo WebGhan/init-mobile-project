@@ -51,9 +51,9 @@ $colore:#eee;
 
 // 版权信息
 .m-copyright { text-align: center; color: $color0; 
-    a { color: $color0; 
-        &:hover { color: red; }
-    }
+	a { color: $color0; 
+		&:hover { color: red; }
+	}
 }
 
 // 富文本内容部分限制
