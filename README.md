@@ -52,7 +52,7 @@ v1.0.0 by 午点科技
 [百度地图开放平台](http://lbsyun.baidu.com/)
 ```html
 <div class="cmap" id="allmap" style="width: 770px; height: 360px;">
-  <!-- 770px 290px -->
+  <!-- 770px 360px -->
 </div>
 <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=4E5A3Fb789138a0ab8431f42a887aea1"></script>
 <script type="text/javascript">
