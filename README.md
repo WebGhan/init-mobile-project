@@ -100,7 +100,7 @@ v1.0.0 by 午点科技
 
 **2. SuperSlide**
 
-SuperSlide！！！菜鸟的福音，IE6苦手的救世主，类似Swiper
+类似Swiper，关键是兼容IE6
 
 有一大把唾fu手zhi可zhan得tie的常用功能，可以方便地实现一些Swiper2.x不方便实现的效果
 
