@@ -1,7 +1,8 @@
 # 初始化静态页面模板（PC版）
-v 1.0.0 by 午点科技
+v1.0.0 by 午点科技
+<br>
 
-## 注意事项
+### 注意事项
 1. 如果所用插件支持，并且只需兼容IE9及以上的浏览器，建议使用2.2.4版本的jquery
 
 2. favicon尺寸应为32\*32/48\*48/64\*64，格式应为ico/png/gif
@@ -13,11 +14,16 @@ v 1.0.0 by 午点科技
 5. 利用浏览器的缓存机制，可以在首页载入其他页面需要的js、css文件（反之，可以提高首页加载速度）
 
 6. 代码发布时，应当压缩css、js等文件
+<br>
+<br>
 
-## SEO优化
+### SEO优化
 1. 一个页面中应该有且只有一个`<h1>`，其包含 网站名称/首页链接/核心关键词 等等，应该放在文档顶部，越接近`<body>`越好，多次使用`<h1>`会被搜索引擎视为作弊，反而降低seo效果
+<br>
+<br>
 
-## 常用
+### 常用
+
 **版权信息的写法**
 
 参考：[https://10.1pxeye.com/footer-copyright/](https://10.1pxeye.com/footer-copyright/)
@@ -26,6 +32,7 @@ v 1.0.0 by 午点科技
 ```html
 <div class="m-copyright">Copyright &copy; 2019 <a href="">公司名称</a> All Right Reserved</div>
 ```
+<br>
 
 **分页**
 
@@ -40,6 +47,7 @@ v 1.0.0 by 午点科技
   <li class="disabled"><span>下一页</span></li>
 </ul>
 ```
+<br>
 
 **百度地图**
 
@@ -65,6 +73,7 @@ v 1.0.0 by 午点科技
   map.openInfoWindow(infoWindow, point); //开启信息窗口
 </script>
 ```
+<br>
 
 **富文本内容样式不尽人意？**
 
@@ -75,6 +84,8 @@ v 1.0.0 by 午点科技
   pre { white-space: pre-wrap; }
 }
 ```
+<br>
+<br>
 
 ## 插件
 
@@ -87,6 +98,7 @@ v 1.0.0 by 午点科技
 不需兼容IE10以下的浏览器？请使用(Swiper4.x)[https://www.swiper.com.cn/]
 
 需兼容IE7+？请使用(Swiper2.x)[https://2.swiper.com.cn/]
+<br>
 
 **SuperSlide**
 
