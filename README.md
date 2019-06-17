@@ -24,7 +24,7 @@ v1.0.0 by 午点科技
 
 **版权信息的写法**
 
-参考：[https://10.1pxeye.com/footer-copyright/](https://10.1pxeye.com/footer-copyright/)
+>参考：[https://10.1pxeye.com/footer-copyright/](https://10.1pxeye.com/footer-copyright/)
 
 示例：
 ```html
@@ -90,11 +90,11 @@ v1.0.0 by 午点科技
 
 大名鼎鼎的swiper，是开发网站利器，各式各样的轮播图、tab切换等效果，没有她做不到，只是你没研究到位
 
-中文文档：(https://www.swiper.com.cn/)[https://www.swiper.com.cn/]
+中文文档：[https://www.swiper.com.cn/](https://www.swiper.com.cn/)
 
-不需兼容IE10以下的浏览器？请使用(Swiper4.x)[https://www.swiper.com.cn/]
+不需兼容IE10以下的浏览器？请使用[Swiper4.x](https://www.swiper.com.cn/)
 
-需兼容IE7+？请使用(Swiper2.x)[https://2.swiper.com.cn/]
+需兼容IE7+？请使用[Swiper2.x](https://2.swiper.com.cn/)
 <br>
 
 **SuperSlide**
@@ -103,4 +103,4 @@ SuperSlide！！！菜鸟的福音，IE6苦手的救世主，类似Swiper
 
 有一大把唾fu手zhi可zhan得tie的常用功能，可以方便地实现一些Swiper2.x不方便实现的效果
 
-官方网站：(http://www.superslide2.com/index.html)[http://www.superslide2.com/index.html]
+官方网站：[http://www.superslide2.com/index.html](http://www.superslide2.com/index.html)
