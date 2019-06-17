@@ -84,7 +84,7 @@ v1.0.0 by 午点科技
 ```
 <br>
 
-## 四、插件
+### 四、插件
 
 **Swiper**
 
@@ -95,6 +95,7 @@ v1.0.0 by 午点科技
 不需兼容IE10以下的浏览器？请使用[Swiper4.x](https://www.swiper.com.cn/)
 
 需兼容IE7+？请使用[Swiper2.x](https://2.swiper.com.cn/)
+
 <br>
 
 **SuperSlide**
