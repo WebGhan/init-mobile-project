@@ -88,7 +88,7 @@ v1.0.0 by 午点科技
 
 **1. Swiper**
 
-大名鼎鼎的swiper，是开发网站利器，各式各样的轮播图、tab切换等效果，没有她做不到，只是你没研究到位
+大名鼎鼎的swiper，是开发网站利器，各式各样的轮播图、tab切换等效果，没有她做不到的，只是你没研究到位
 
 中文文档：[https://www.swiper.com.cn/](https://www.swiper.com.cn/)
 
