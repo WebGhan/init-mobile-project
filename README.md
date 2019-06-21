@@ -13,7 +13,7 @@ v1.0.0 by 午点科技
 
 5. 利用浏览器的缓存机制，可以在首页载入其他页面需要的js、css文件（反之，可以提高首页加载速度）
 
-6. 代码发布时，应当压缩css、js等文件
+6. 代码发布时，应当压缩css、js等文件，压缩文件的名称后面要跟.min
 <br>
 
 ### 二、SEO优化
@@ -78,8 +78,8 @@ v1.0.0 by 午点科技
 限制即可：
 ```scss
 .rich-text {
-  img { max-width: 100%; height: auto; }
-  pre { white-space: pre-wrap; }
+  img { max-width: 100%!important; height: auto!important; }
+  pre { white-space: pre-wrap!important; }
 }
 ```
 <br>
