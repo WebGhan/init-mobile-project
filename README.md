@@ -3,11 +3,11 @@ v1.0.0 by 午点科技
 <br>
 
 ### 一、注意事项
-1. 如果所用插件支持，并且只需兼容IE9及以上的浏览器，建议使用2.2.4版本的jquery
+1. 如果所用插件支持，并且只需兼容IE9及以上的浏览器，建议使用2.2.4版本的jquery，也可用vue2.x
 
 2. favicon尺寸应为32\*32/48\*48/64\*64，格式应为ico/png/gif
 
-3. 一般情况，引入样式的`<link>`应该放在`<head>`中，因为样式应该优先加载，才能保证页面不错乱
+3. 一般情况，引入样式的`<link>`应该放在`<head>`中，因为样式应该优先加载，才能保证页面在刚打开时不错乱
 
 4. 对于一些不需要一开始就载入的JS文件，可以把`<script>`放在文档底部以加快页面打开速度
 
@@ -34,7 +34,7 @@ v1.0.0 by 午点科技
 
 **1. 分页**
 
-能让本公司后端愉悦的写法：
+默认分页，直接复制即可
 ```html
 <ul class="pagination">
   <li><a href="">上一页</a></li>
@@ -88,13 +88,13 @@ v1.0.0 by 午点科技
 
 **1. Swiper**
 
-大名鼎鼎的swiper，是开发网站利器，各式各样的轮播图、tab切换等效果，没有她做不到的，只是你没研究到位
+大名鼎鼎的swiper，是开发网站利器，各式各样的轮播图、tab切换等效果，没有它做不到的，只是你没研究到位
 
 中文文档：[https://www.swiper.com.cn/](https://www.swiper.com.cn/)
 
 不需兼容IE10以下的浏览器？请使用[Swiper4.x](https://www.swiper.com.cn/)
 
-需兼容IE7+？请使用[Swiper2.x](https://2.swiper.com.cn/)
+需兼容IE7？请使用[Swiper2.x](https://2.swiper.com.cn/)
 
 <br>
 
@@ -105,3 +105,15 @@ v1.0.0 by 午点科技
 有一大把唾fu手zhi可zhan得tie的常用功能，可以方便地实现一些Swiper2.x不方便实现的效果
 
 官方网站：[http://www.superslide2.com/index.html](http://www.superslide2.com/index.html)
+
+<br>
+
+**3. Layui**
+
+Layui的弹层组件和日历组件都很好用，均有相应的独立版本，且兼容IE8
+
+Layui官网：[https://www.layui.com](https://www.layui.com/)
+
++ 弹层——layer，兼容IE6，文档：[http://layer.layui.com](http://layer.layui.com/)
+
++ 日历——laydate，文档：[https://www.layui.com/laydate](https://www.layui.com/laydate/)
