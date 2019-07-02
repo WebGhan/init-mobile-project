@@ -17,17 +17,12 @@ input:focus, textarea:focus {outline:none;}
 .clearfloat:after{display:block;content:"";height:0;visibility:hidden;clear:both;}
 .clearfloat{zoom:1}
 
-/* main */
-@mixin main($width:1200px){width:$width; margin:0 auto;}
-@mixin shadow($cont:0 0 0 rgba(0,0,0,0.1)){box-shadow:$cont; -webkit-box-shadow:$cont;-o-box-shadow:$cont; -moz-box-shadow:$cont; }
-@mixin radius($num:50%){border-radius:$num; -webkit-border-radius:$num; -o-border-radius:$num; -moz-border-radius:$num;}
-@mixin rotate($num:0){ -webkit-transform: rotate($num);-ms-transform: rotate($num);-o-transform: rotate($num);transform: rotate($num); }
-@mixin scale($num:0){ -webkit-transform: scale($num);-ms-transform: scale($num);-o-transform: scale($num);transform: scale($num); }
-@mixin inlineblock(){display: inline-block; *display: inline; *zoom: 1;}
-@mixin opacity($num:0){opacity: $num; -webkit-opacity: $num; -o-opacity: $num; -moz-opacity: $num;filter:alpha(opacity=$num*100)}
-@mixin textover(){overflow:hidden;white-space:nowrap;display:block;text-overflow:ellipsis;}
-@mixin textovermore($line:2){display: -webkit-box;display: -moz-box;overflow: hidden;text-overflow: ellipsis;word-break: break-all;-webkit-box-orient: vertical;-webkit-line-clamp:$line;  }
-@mixin transition($num:all 0.5s ease){transition: $num; -webkit-transition: $num; -o-transition: $num; -moz-transition: $num;}
+@mixin transform($var: scale(0)) { -ms-transform: $var; -moz-transform: $var; -webkit-transform: $var; transform: $var; }
+@mixin transition($var: all 0.5s) { -moz-transition: $var; -webkit-transition: $var; transition: $var; }
+@mixin inline-block() { display: inline-block; *display: inline; *zoom: 1; }
+@mixin opacity($num: 0) { filter:alpha(opacity=$num*100); opacity: $num; }
+@mixin textover() { display:block; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+@mixin textover-multi($line: 2) { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: $line; overflow: hidden; }
 
 $color0:#000;
 $color3:#333;
@@ -35,6 +30,7 @@ $color6:#666;
 $color9:#999;
 $colore:#eee;
 
+/* main */
 // 默认分页
 .pagination { zoom:1;
 	li { float: left; margin-right: 10px; background: $colore;
@@ -46,7 +42,7 @@ $colore:#eee;
 			a, span { color: $color6; }
 		}
 	}
-	&:after{display:block;clear:both;content:"";visibility:hidden;height:0;}
+	&:after{ display:block; clear:both; content:""; visibility: hidden; height:0;}
 }
 
 // 版权信息
