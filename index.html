@@ -3,18 +3,18 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="description" content="">
   <meta name="keywords" content="">
   <title>Document</title>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/common.min.css">
-  <script src="js/jquery/jquery-1.9.1.min.js"></script>
+  <script src="js/jquery/jquery-2.2.4.min.js"></script>
   <script src="js/common.js"></script>
 </head>
 <body>
   <!-- 代码发布时应删除此注释，'/'是或者的意思
-    * 如果所用插件支持，并且只需兼容ie9及以上的浏览器，建议使用2.2.4版本的jquery
+    * 请使用2.2.4版本的jquery，也可用vue2.x
 
     * favicon尺寸应为32*32/48*48/64*64，格式应为ico/png/gif
 
@@ -32,9 +32,7 @@
 
   <!-- 百度地图示例 -->
   <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=4E5A3Fb789138a0ab8431f42a887aea1"></script>
-  <div class="cmap" id="allmap" style="width: 770px; height: 360px;">
-    <!-- 770px 290px -->
-  </div>
+  <div class="cmap" id="allmap" style="width: 100%; height: 7.5rem;"></div>
   <script type="text/javascript">
     // 百度地图API功能
     var map = new BMap.Map("allmap");
@@ -44,8 +42,8 @@
     map.centerAndZoom(point, 11);        // 初始化地图，设置中心点坐标和地图级别 
     map.enableScrollWheelZoom(true);     // 开启鼠标滚轮缩放
     var opts = {
-      width: 300,     // 信息窗口宽度
-      height: 100,     // 信息窗口高度
+      width: 100,     // 信息窗口宽度
+      height: 60,     // 信息窗口高度
       title: "公司名称", // 信息窗口标题
     }
     var infoWindow = new BMap.InfoWindow("地址：公司所在地", opts);  // 创建信息窗口对象

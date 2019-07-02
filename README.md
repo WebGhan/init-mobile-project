@@ -1,19 +1,21 @@
-# 初始化静态页面模板（PC版）
+# 初始化静态页面模板（Mobile版）
 v1.0.0 by 午点科技
 <br>
 
 ### 一、注意事项
-1. 请使用2.2.4版本的jquery，也可用vue2.x
+1. 计图尺寸约定为750px宽，如果设计图尺寸不同，则需设置setRootSize函数
 
-2. favicon尺寸应为32\*32/48\*48/64\*64，格式应为ico/png/gif
+2. 请使用2.2.4版本的jquery，也可用vue2.x
 
-3. 一般情况，引入样式的`<link>`应该放在`<head>`中，因为样式应该优先加载，才能保证页面在刚打开时不错乱
+3. favicon尺寸应为32\*32/48\*48/64\*64，格式应为ico/png/gif
 
-4. 对于一些不需要一开始就载入的JS文件，可以把`<script>`放在文档底部以加快页面打开速度
+4. 一般情况，引入样式的`<link>`应该放在`<head>`中，因为样式应该优先加载，才能保证页面在刚打开时不错乱
 
-5. 利用浏览器的缓存机制，可以在首页载入其他页面需要的js、css文件（反之，可以提高首页加载速度）
+5. 对于一些不需要一开始就载入的JS文件，可以把`<script>`放在文档底部以加快页面打开速度
 
-6. 代码发布时，应当压缩css、js等文件，压缩文件的名称后面要跟.min，例如main.min.css
+6. 利用浏览器的缓存机制，可以在首页载入其他页面需要的js、css文件（反之，可以提高首页加载速度）
+
+7. 代码发布时，应当压缩css、js等文件，压缩文件的名称后面要跟.min，例如main.min.css
 <br>
 
 ### 二、SEO优化
@@ -24,7 +26,7 @@ v1.0.0 by 午点科技
 
 **版权信息的写法**
 
->参考：[https://10.1pxeye.com/footer-copyright/](https://10.1pxeye.com/footer-copyright/)
+>参考：[https://10.1pxeye.com/footer-copyright](https://10.1pxeye.com/footer-copyright/)
 
 示例：
 ```html
@@ -36,9 +38,7 @@ v1.0.0 by 午点科技
 
 [百度地图开放平台](http://lbsyun.baidu.com/)
 ```html
-<div class="cmap" id="allmap" style="width: 770px; height: 360px;">
-  <!-- 770px 360px -->
-</div>
+<div class="cmap" id="allmap" style="width: 100%; height: 7.5rem;"></div>
 <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=4E5A3Fb789138a0ab8431f42a887aea1"></script>
 <script type="text/javascript">
   var map = new BMap.Map("allmap");
@@ -75,6 +75,6 @@ v1.0.0 by 午点科技
 
 大名鼎鼎的swiper，是开发网站利器，各式各样的轮播图、tab切换等效果，没有它做不到的，只是你没研究到位
 
-中文文档：[https://www.swiper.com.cn/](https://www.swiper.com.cn/)
+中文文档：[https://www.swiper.com.cn](https://www.swiper.com.cn/)
 
 <br>

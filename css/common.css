@@ -7,8 +7,7 @@ body, ol, ul, h1, h2, h3, h4, h5, h6, div, p, th, td, dl, dd, form, fieldset, le
 }
 
 body {
-  min-width: 1200px;
-  font: 14px/1.5 "微软雅黑","Arial Narrow",HELVETICA,sans-serif;
+  font: 0.28rem/1.5 "微软雅黑","Arial Narrow",HELVETICA,sans-serif;
   color: #333;
   background: #fff;
 }
