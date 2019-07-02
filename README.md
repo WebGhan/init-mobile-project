@@ -78,13 +78,3 @@ v1.0.0 by 午点科技
 中文文档：[https://www.swiper.com.cn/](https://www.swiper.com.cn/)
 
 <br>
-
-**3. Layui**
-
-Layui的弹层组件和日历组件都很好用，均有相应的独立版本，且兼容IE8
-
-Layui官网：[https://www.layui.com](https://www.layui.com/)
-
-+ 弹层——layer，兼容IE6，文档：[http://layer.layui.com](http://layer.layui.com/)
-
-+ 日历——laydate，文档：[https://www.layui.com/laydate](https://www.layui.com/laydate/)
