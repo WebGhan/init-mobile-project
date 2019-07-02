@@ -10,17 +10,12 @@ input, textarea {resize:none;font-size:14px;}
 input:focus, textarea:focus {outline:none;}
  
 /* public */
-.main {margin-left:auto;margin-right:auto;width:1200px;}
 .floatleft{float: left;}
 .floatright{float: right;}
 // 清除浮动（用在父元素上）
 .clearfloat:after{display:block;content:"";height:0;visibility:hidden;clear:both;}
 .clearfloat{zoom:1}
 
-@mixin transform($var: scale(0)) { -ms-transform: $var; -moz-transform: $var; -webkit-transform: $var; transform: $var; }
-@mixin transition($var: all 0.5s) { -moz-transition: $var; -webkit-transition: $var; transition: $var; }
-@mixin inline-block() { display: inline-block; *display: inline; *zoom: 1; }
-@mixin opacity($num: 0) { filter:alpha(opacity=$num*100); opacity: $num; }
 @mixin textover() { display:block; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
 @mixin textover-multi($line: 2) { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: $line; overflow: hidden; }
 
@@ -31,20 +26,6 @@ $color9:#999;
 $colore:#eee;
 
 /* main */
-// 默认分页
-.pagination { zoom:1;
-	li { float: left; margin-right: 10px; background: $colore;
-		a, span { display: block; padding: 0 10px; min-width: 20px; height: 40px; line-height: 40px; text-align: center; color: $color6; }
-		&:hover, &.active{ color: #fff; background: $color0;
-			a, span { color: #fff; }
-		}
-		&.disabled { color: $color6; background: $colore; cursor: not-allowed; 
-			a, span { color: $color6; }
-		}
-	}
-	&:after{ display:block; clear:both; content:""; visibility: hidden; height:0;}
-}
-
 // 版权信息
 .m-copyright { text-align: center; color: $color0; 
 	a { color: $color0; 

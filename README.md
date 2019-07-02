@@ -3,7 +3,7 @@ v1.0.0 by 午点科技
 <br>
 
 ### 一、注意事项
-1. 如果所用插件支持，并且只需兼容IE9及以上的浏览器，建议使用2.2.4版本的jquery，也可用vue2.x
+1. 请使用2.2.4版本的jquery，也可用vue2.x
 
 2. favicon尺寸应为32\*32/48\*48/64\*64，格式应为ico/png/gif
 
@@ -29,21 +29,6 @@ v1.0.0 by 午点科技
 示例：
 ```html
 <div class="m-copyright">Copyright &copy; 2019 <a href="">公司名称</a> All Right Reserved</div>
-```
-<br>
-
-**1. 分页**
-
-默认分页，直接复制即可
-```html
-<ul class="pagination">
-  <li><a href="">上一页</a></li>
-  <li class="disabled"><span>1</span></li>
-  <li class="active"><span>1</span></li>
-  <li><a href="">2</a></li>
-  <li><a href="">下一页</a></li>
-  <li class="disabled"><span>下一页</span></li>
-</ul>
 ```
 <br>
 
@@ -91,20 +76,6 @@ v1.0.0 by 午点科技
 大名鼎鼎的swiper，是开发网站利器，各式各样的轮播图、tab切换等效果，没有它做不到的，只是你没研究到位
 
 中文文档：[https://www.swiper.com.cn/](https://www.swiper.com.cn/)
-
-不需兼容IE10以下的浏览器？请使用[Swiper4.x](https://www.swiper.com.cn/)
-
-需兼容IE7？请使用[Swiper2.x](https://2.swiper.com.cn/)
-
-<br>
-
-**2. SuperSlide**
-
-类似Swiper，关键是兼容IE6
-
-有一大把唾fu手zhi可zhan得tie的常用功能，可以方便地实现一些Swiper2.x不方便实现的效果
-
-官方网站：[http://www.superslide2.com/index.html](http://www.superslide2.com/index.html)
 
 <br>
 
