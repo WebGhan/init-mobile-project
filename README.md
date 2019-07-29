@@ -3,7 +3,7 @@ v1.0.0 by 午点科技
 <br>
 
 ### 一、注意事项
-1. 计图尺寸约定为750px宽，如果设计图尺寸不同，则需设置setRootSize函数
+1. 计图尺寸约定为750px宽，如果设计图尺寸不同，则需在`common.js`文件中修改setRootSize函数的参数
 
 2. 请使用2.2.4版本的jquery，也可用vue2.x
 
@@ -78,5 +78,13 @@ v1.0.0 by 午点科技
 大名鼎鼎的swiper，是开发网站利器，各式各样的轮播图、tab切换等效果，没有它做不到的，只是你没研究到位
 
 中文文档：[https://www.swiper.com.cn](https://www.swiper.com.cn/)
+
+<br>
+
+**2. WeUI**
+
+weui.css文档：[https://github.com/Tencent/weui](https://github.com/Tencent/weui)
+
+weui.js文档：[https://github.com/Tencent/weui.js](https://github.com/Tencent/weui.js)
 
 <br>

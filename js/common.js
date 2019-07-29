@@ -1,4 +1,4 @@
-// rem/px换算，参数size为设计图宽度尺寸（单位为像素）
+// rem/px换算，参数size为设计图宽度（单位为像素）
 (function setRootSize(size) {
 	var _doc = document.documentElement
 	function setSize() {
