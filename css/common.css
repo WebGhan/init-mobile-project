@@ -41,14 +41,6 @@ input:focus, textarea:focus {
 }
 
 /* public */
-.floatleft {
-  float: left;
-}
-
-.floatright {
-  float: right;
-}
-
 .clearfloat:after {
   display: block;
   content: "";
