@@ -1,11 +1,11 @@
-# 初始化静态页面模板（Mobile版）
-v1.0.0 by 午点科技
+# 初始页面模板（Mobile端）
+v1.0.1 by 午点科技
 <br>
 
 ### 一、注意事项
 1. 计图尺寸约定为750px宽，如果设计图尺寸不同，则需在`common.js`文件中修改setRootSize函数的参数
 
-2. 请使用2.2.4版本的jquery，也可用vue2.x
+2. 请使用2.2.4版本的jquery
 
 3. favicon尺寸应为32\*32/48\*48/64\*64，格式应为ico/png/gif
 
@@ -25,6 +25,14 @@ v1.0.0 by 午点科技
 <br>
 
 ### 三、常用
+
+**网页语言定义 `<html lang="zh">`**
+
+HTML 的 lang 属性可用于网页或部分网页的语言。这对搜索引擎和浏览器是有帮助的。根据 W3C 推荐标准，您应该通过 `<html>` 标签中的 lang 属性对每张页面中的主要语言进行声明。
+
+> 参考：[http://www.w3school.com.cn/tags/html_ref_language_codes.asp](http://www.w3school.com.cn/tags/html_ref_language_codes.asp)
+
+<br>
 
 **版权信息的写法**
 
@@ -60,9 +68,8 @@ v1.0.0 by 午点科技
 ```
 <br>
 
-**3. 富文本内容样式不尽人意？**
+**3. 覆盖富文本内容样式**
 
-限制即可：
 ```scss
 .rich-text {
   img { max-width: 100%!important; height: auto!important; }
@@ -74,8 +81,6 @@ v1.0.0 by 午点科技
 ### 四、插件
 
 **1. Swiper**
-
-大名鼎鼎的swiper，是开发网站利器，各式各样的轮播图、tab切换等效果，没有它做不到的，只是你没研究到位
 
 中文文档：[https://www.swiper.com.cn](https://www.swiper.com.cn/)
 
