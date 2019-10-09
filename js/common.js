@@ -29,5 +29,5 @@ function backTop(btn) {
 }
 
 window.onload = function() {
-	backTop('backop');
+	backTop('backtop');
 };
