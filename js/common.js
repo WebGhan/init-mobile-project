@@ -16,12 +16,12 @@ function backTop(btn) {
 	if (!_btn) return
 	_btn.onclick = function() {
 		var _currentScroll = window.scrollY;
-		var _offset = _currentScroll / 20;
+		var _offset = _currentScroll / 15;
 		function scrollToTop() {
 			var _pos = window.scrollY;
 			if ( _pos > 0 ) {
 				window.scroll(0, _pos - _offset);
-				window.requestAnimationFrame(scrollToTop);
+				setTimeout(scrollToTop, 20)
 			}
 		};
 		scrollToTop();
