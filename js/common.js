@@ -27,7 +27,3 @@ function backTop(btn) {
 		scrollToTop();
 	}
 }
-
-window.onload = function() {
-	backTop('backtop');
-};
