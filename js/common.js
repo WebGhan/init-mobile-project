@@ -13,8 +13,8 @@
 // 返回顶部
 function backTop(btn) {
 	var _btn = document.getElementById(btn);
-	var scrollTimeout = null;
 	if (!_btn) return;
+	var scrollTimeout = null;
 
 	_btn.addEventListener('click', function() {
 		var _currentScroll = window.scrollY;
