@@ -33,7 +33,7 @@ table {
 
 input, textarea {
   resize: none;
-  font-size: 14px;
+  font-size: 0.28rem;
 }
 
 input:focus, textarea:focus {
@@ -54,16 +54,16 @@ input:focus, textarea:focus {
 }
 
 /* main */
-.m-copyright {
+.g-copyright {
   text-align: center;
   color: #000;
 }
 
-.m-copyright a {
+.g-copyright a {
   color: #000;
 }
 
-.m-copyright a:hover {
+.g-copyright a:hover {
   color: red;
 }
 
@@ -74,4 +74,39 @@ input:focus, textarea:focus {
 
 .rich-text pre {
   white-space: pre-wrap;
+}
+
+.g-nomore {
+  height: 1.4rem;
+  line-height: 1.4rem;
+  text-align: center;
+  color: #999;
+}
+
+.g-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.4rem;
+  line-height: 1;
+  color: #999;
+}
+
+.g-loading .icon {
+  margin-right: 0.14rem;
+  width: 0.26rem;
+  height: 0.26rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-top-color: #999;
+  border-radius: 50%;
+  animation: g-loading 0.6s infinite linear;
+}
+
+@keyframes g-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

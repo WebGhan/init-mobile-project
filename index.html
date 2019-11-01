@@ -13,7 +13,7 @@
 </head>
 <body>
   <!-- 版权信息 -->
-  <div class="m-copyright">Copyright &copy; 2019 <a href="">公司名称</a> All Right Reserved</div>
+  <div class="g-copyright">Copyright &copy; 2019 <a href="">公司名称</a> All Right Reserved</div>
 
   <!-- 百度地图示例 -->
   <div class="cmap" id="allmap" style="width: 100%; height: 7.5rem;"></div>
@@ -34,6 +34,14 @@
     var infoWindow = new BMap.InfoWindow("地址：公司所在地", opts);  // 创建信息窗口对象
     map.openInfoWindow(infoWindow, point); //开启信息窗口
   </script>
+
+  <!-- 正在加载 -->
+  <div class="g-loading">
+    <span class="icon"></span>
+    <span>正在加载</span>
+  </div>
+  <!-- 没有更多 -->
+  <div class="g-nomore">没有更多</div>
 
   <!-- 返回顶部 -->
   <div id="backtop">返回顶部</div>
