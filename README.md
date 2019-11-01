@@ -93,3 +93,9 @@ weui.css文档：[https://github.com/Tencent/weui](https://github.com/Tencent/we
 weui.js文档：[https://github.com/Tencent/weui.js](https://github.com/Tencent/weui.js)
 
 <br>
+
+**3. LazyLoad（图片懒加载）**
+
+指南：[https://github.com/tuupola/lazyload](https://github.com/tuupola/lazyload)
+
+<br>
