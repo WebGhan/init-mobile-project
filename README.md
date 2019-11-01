@@ -19,7 +19,7 @@ v1.0.2 by 午点科技
 
 8. 推荐使用flex进行布局
 
-9. 建议不要定义font-family，可缓解字体垂直不居中的问题
+9. 设置font-family:initial;line-height:1;配合flex布局，可缓解字体垂直不居中的问题
 <br>
 
 ### 二、SEO优化
