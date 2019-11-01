@@ -6,7 +6,7 @@ body, ol, ul, h1, h2, h3, h4, h5, h6, div, p, th, td, dl, dd, form, fieldset, le
 }
 
 body {
-  font-family: inherit;
+  font-family: unset;
   font-size: 0.28rem;
   line-height: 1.5;
   color: #333;
