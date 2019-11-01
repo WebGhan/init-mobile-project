@@ -17,9 +17,9 @@ v1.0.2 by 午点科技
 
 7. 代码发布时，应当压缩css、js等文件，压缩文件的名称后面要跟.min，例如common.min.css
 
-8. 推荐使用flex进行布局
+8. 推荐使用`flex`进行布局
 
-9. 设置font-family:initial;line-height:1;配合flex布局，可缓解字体垂直不居中的问题
+9. 不建议全局定义`font-family`，因为可能导致字体垂直偏移（设置`font-family: initial; line-height: 1;`并配合`flex`布局，可解决字体垂直不居中的问题）
 <br>
 
 ### 二、SEO优化
