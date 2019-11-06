@@ -33,8 +33,8 @@ $colore:#eee;
 
 // 富文本内容部分限制
 .rich-text {
-	img { max-width: 100%; height: auto; }
-	pre { white-space: pre-wrap; }
+	img { max-width: 100%!important; height: auto!important; }
+	pre { white-space: pre-wrap!important; }
 }
 
 // 没有更多
