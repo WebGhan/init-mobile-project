@@ -18,6 +18,11 @@ a {
   cursor: pointer;
 }
 
+button {
+  font-size: 0.28rem;
+  outline: none;
+}
+
 li {
   list-style: none;
 }
