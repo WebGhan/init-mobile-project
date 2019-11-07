@@ -10,10 +10,11 @@ body {
   font-size: 0.28rem;
   line-height: 1.5;
   color: #333;
-  background: #fff;
+  background: #f7f7f7;
 }
 
 a {
+  color: #333;
   text-decoration: none;
   cursor: pointer;
 }
@@ -40,10 +41,15 @@ table {
 input, textarea {
   resize: none;
   font-size: 0.28rem;
+  caret-color: auto;
 }
 
 input:focus, textarea:focus {
   outline: none;
+}
+
+input:disabled {
+  background: none;
 }
 
 /* public */
