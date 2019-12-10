@@ -47,6 +47,11 @@ $colore:#eee;
 .g-loading { display: flex; align-items: center; justify-content: center; height: 1.4rem; line-height: 1; color: #999;
 	.icon { margin-right: 0.14rem; width: 0.26rem; height: 0.26rem; border: 1px solid rgba(0, 0, 0, 0.1); border-top-color: #999; border-radius: 50%; animation: g-loading 0.6s infinite linear; }
 }
+// 加载失败
+.g-loading-fail { padding: 0.2rem 0; text-align: center; line-height: 1.4; font-size: 0.28rem;
+	.p1 { color: #999; }
+	.p2 { color: red; }
+}
 @keyframes g-loading {
 	0% { transform: rotate(0deg); }
 	100% { transform: rotate(360deg); }

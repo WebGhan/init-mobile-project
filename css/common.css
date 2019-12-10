@@ -119,6 +119,21 @@ input:disabled {
   animation: g-loading 0.6s infinite linear;
 }
 
+.g-loading-fail {
+  padding: 0.2rem 0;
+  text-align: center;
+  line-height: 1.4;
+  font-size: 0.28rem;
+}
+
+.g-loading-fail .p1 {
+  color: #999;
+}
+
+.g-loading-fail .p2 {
+  color: red;
+}
+
 @keyframes g-loading {
   0% {
     transform: rotate(0deg);
