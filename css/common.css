@@ -21,6 +21,7 @@ a {
   color: #333;
   text-decoration: none;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 button {
@@ -54,6 +55,10 @@ input:focus, textarea:focus {
 
 input:disabled {
   background: none;
+}
+
+input:-webkit-autofill {
+  transition: background 1s 99999s;
 }
 
 /* public */
@@ -141,4 +146,41 @@ input:disabled {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.g-404 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 70vh;
+  text-align: center;
+}
+
+.g-404 .icon {
+  height: 5rem;
+  background: url(../images/404.svg) no-repeat center center/contain;
+}
+
+.g-404 .hint {
+  color: #999;
+}
+
+.g-404 .actions {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.8rem 0.3rem 0;
+}
+
+.g-404 .btn {
+  width: 40%;
+  line-height: 0.9rem;
+  color: #fff;
+  background: #ccc;
+  border: 1px solid #ccc;
+  border-radius: 0.1rem;
+}
+
+.g-404 .plain {
+  color: #999;
+  background: none;
 }

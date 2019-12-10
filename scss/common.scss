@@ -3,22 +3,23 @@
 body,ol,ul,h1,h2,h3,h4,h5,h6,div,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;font-family:unset;word-wrap:break-word;}
 ol,ul,textarea{padding:0;}
 body{font-family:unset;font-size:0.32rem;line-height:1.5;color:#333;background:#f7f7f7;}
-a{color:#333;text-decoration:none;cursor:pointer;}
+a{color:#333;text-decoration:none;cursor:pointer;-webkit-tap-highlight-color:transparent;}
 button{font-size:0.28rem;outline:none;}
 li{list-style:none}
 img{border:0;vertical-align:middle}
 table{border-collapse:collapse;border-spacing:0}
-input,textarea{resize:none;font-size:0.28rem;caret-color: auto;}
+input,textarea{resize:none;font-size:0.28rem;caret-color:auto;}
 input:focus,textarea:focus{outline:none;}
-input:disabled{background: none;}
+input:disabled{background:none;}
+input:-webkit-autofill{transition:background 1s 99999s;}
  
 /* public */
 // 清除浮动（用在父元素上）
 .clearfloat:after{display:block;content:"";height:0;visibility:hidden;clear:both;}
 .clearfloat{zoom:1}
 
-@mixin textover() { display:block; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
-@mixin textover-multi($line: 2) { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: $line; overflow: hidden; }
+@mixin textoverflow() { display:block; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+@mixin textoverflow-multi($line: 2) { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: $line; overflow: hidden; }
 
 $color0:#000;
 $color3:#333;
@@ -55,4 +56,13 @@ $colore:#eee;
 @keyframes g-loading {
 	0% { transform: rotate(0deg); }
 	100% { transform: rotate(360deg); }
+}
+
+// 404
+.g-404 { display: flex; flex-direction: column; justify-content: center; height: 70vh; text-align: center;
+	.icon { height: 5rem; background: url(../images/404.svg) no-repeat center center/contain; }
+	.hint { color: #999; }
+	.actions { display: flex; justify-content: space-around; padding: 0.8rem 0.3rem 0; }
+	.btn { width: 40%; line-height: 0.9rem; color: #fff; background: #ccc; border: 1px solid #ccc; border-radius: 0.1rem; }
+	.plain { color: #999; background: none; }
 }
