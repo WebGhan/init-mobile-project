@@ -11,20 +11,24 @@
 })(750)
 
 // 返回顶部
-function backTop(btn) {
-	var _btn = document.getElementById(btn);
+function backTop(btnId) {
+	var _btn = document.getElementById(btnId);
 	if (!_btn) return;
 	var scrollTimeout = null;
 
 	_btn.addEventListener('click', function() {
 		var _currentScroll = window.scrollY;
 		var _offset = _currentScroll / 15;
+		var _hasAnimationFrame = Boolean(window.requestAnimationFrame)
 		function scrollToTop() {
 			var _pos = window.scrollY;
 			if ( _pos > 0 ) {
 				window.scroll(0, _pos - _offset);
-				// setTimeout(scrollToTop, 20);
-				window.requestAnimationFrame(scrollToTop);
+				if (_hasAnimationFrame) {
+					window.requestAnimationFrame(scrollToTop)
+				} else {
+					setTimeout(scrollToTop, 20);
+				}
 			}
 		};
 		scrollToTop();
