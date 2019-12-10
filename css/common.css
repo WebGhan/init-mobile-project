@@ -124,6 +124,15 @@ input:-webkit-autofill {
   animation: g-loading 0.6s infinite linear;
 }
 
+@keyframes g-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .g-loading-fail {
   padding: 0.3rem 0;
   text-align: center;
@@ -137,15 +146,6 @@ input:-webkit-autofill {
 
 .g-loading-fail .p2 {
   color: red;
-}
-
-@keyframes g-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }
 
 .g-empty {
