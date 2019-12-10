@@ -148,11 +148,23 @@ input:-webkit-autofill {
   }
 }
 
+.g-empty {
+  padding: 1rem 0;
+  text-align: center;
+  color: #999;
+}
+
+.g-empty .icon {
+  margin-bottom: 0.4rem;
+  height: 3rem;
+  background: url(../images/empty.svg) no-repeat center center/contain;
+}
+
 .g-404 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 70vh;
+  min-height: 80vh;
   text-align: center;
 }
 
@@ -168,7 +180,7 @@ input:-webkit-autofill {
 .g-404 .actions {
   display: flex;
   justify-content: space-around;
-  padding: 0.8rem 0.3rem 0;
+  padding: 0.8rem 0.3rem;
 }
 
 .g-404 .btn {

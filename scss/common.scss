@@ -58,11 +58,16 @@ $colore:#eee;
 	100% { transform: rotate(360deg); }
 }
 
+// 空页面
+.g-empty { padding: 1rem 0; text-align: center; color: #999;
+	.icon { margin-bottom: 0.4rem; height: 3rem; background: url(../images/empty.svg) no-repeat center center/contain; }
+}
+
 // 404
-.g-404 { display: flex; flex-direction: column; justify-content: center; height: 70vh; text-align: center;
+.g-404 { display: flex; flex-direction: column; justify-content: center; min-height: 80vh; text-align: center;
 	.icon { height: 5rem; background: url(../images/404.svg) no-repeat center center/contain; }
 	.hint { color: #999; }
-	.actions { display: flex; justify-content: space-around; padding: 0.8rem 0.3rem 0; }
+	.actions { display: flex; justify-content: space-around; padding: 0.8rem 0.3rem; }
 	.btn { width: 40%; line-height: 0.9rem; color: #fff; background: #ccc; border: 1px solid #ccc; border-radius: 0.1rem; }
 	.plain { color: #999; background: none; }
 }
