@@ -12,7 +12,7 @@ input,textarea{resize:none;font-size:0.28rem;caret-color:auto;}
 input:focus,textarea:focus{outline:none;}
 input:disabled{background:none;}
 input:-webkit-autofill{transition:background 1s 99999s;}
- 
+
 /* public */
 // 清除浮动（用在父元素上）
 .clearfloat:after{display:block;content:"";height:0;visibility:hidden;clear:both;}
