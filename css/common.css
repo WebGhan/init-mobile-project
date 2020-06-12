@@ -10,7 +10,6 @@ ol, ul, textarea {
 }
 
 body {
-  font-family: unset;
   font-size: 0.32rem;
   line-height: 1.5;
   color: #333;
